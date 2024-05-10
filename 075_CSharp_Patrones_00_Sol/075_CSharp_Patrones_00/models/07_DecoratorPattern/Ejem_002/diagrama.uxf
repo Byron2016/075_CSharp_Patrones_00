@@ -1,0 +1,38 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>50</y><w>100</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+/LibraryItem/
+--
+-numCopies: int
+--
++NumCopies():int
+/+Display()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>270</y><w>100</w><h>90</h></coordinates><panel_attributes>Book 
+--
+-author: string
+-title: string
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>270</y><w>100</w><h>90</h></coordinates><panel_attributes>Video
+--
+-director: string
+-title: string
+-playTime:string
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>130</y><w>110</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Implements</panel_attributes><additional_attributes>10;10;30;140</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>130</y><w>160</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Implements</panel_attributes><additional_attributes>130;10;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>200</y><w>210</w><h>90</h></coordinates><panel_attributes>Decorator
+--
+-libraryItem: LibraryItem
+--
+Decorator(libraryItem:LibraryItem )
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>130</y><w>230</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Implements
+Decorate</panel_attributes><additional_attributes>10;10;210;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>400</y><w>210</w><h>90</h></coordinates><panel_attributes>Borrowable
+--
+-borrowers[]: string
+--
++Borrowable(libraryItem:LibraryItem )
++BorrowItem(name:string)
++ReturnItem(name:string)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>280</y><w>100</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Implements</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element></diagram>
